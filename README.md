@@ -32,12 +32,15 @@ I downloaded ten years of publicly available financial data for UK universities 
   - Net cash generated from operations as a percentage of income
 * Visualised the results to support clear communication with stakeholders
 
-![Scatterplot of Net cash vs. Surplus/deficit for UK HEIs, 2015-2024](https://github.com/kathryncodesthings/python-data-projects/blob/main/img/HESA_data_scatterplot.png "Scatterplot of Net cash vs. Surplus/deficit for UK HEIs, 2015-2024")
+This was originally done in Power BI. I've recreated my work to share on GitHub using Python and Pandas.
 
 ### Juptyer Notebook
 The complete code I produced is here: [HESA KFI Analysis Python code](https://github.com/kathryncodesthings/python-data-projects/blob/main/notebooks/HESA%20data%20analysis.ipynb)
 
 ### Conclusions
+I visualised the results of the relationship analysis:
+![Scatterplot of Net cash vs. Surplus/deficit for UK HEIs, 2015-2024](https://github.com/kathryncodesthings/python-data-projects/blob/main/img/HESA_data_scatterplot.png "Scatterplot of Net cash vs. Surplus/deficit for UK HEIs, 2015-2024")
+
 To quantify the strength of the relationship, I calculated R², which measures how much of the variation in one variable can be explained by another.
 * An R² of 1.0 would indicate a perfect relationship
 * An R² of 0.35 would suggest that around 35% of the variation in cash could be explained by surplus
