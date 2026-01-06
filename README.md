@@ -27,6 +27,7 @@ I downloaded ten years of publicly available financial data for UK universities 
 
 * Cleaned and standardised the dataset
 * Identified and handled outliers
+  - Reviewed outliers, and excluded values higher than the 95th percentile and lower than the 5th percentile
 * Analysed the relationship between:
   - Surplus/(deficit) as a percentage of income
   - Net cash generated from operations as a percentage of income
@@ -39,6 +40,7 @@ The complete code I produced is here: [HESA KFI Analysis Python code](https://gi
 
 ### Conclusions
 I visualised the results of the relationship analysis:
+
 ![Scatterplot of Net cash vs. Surplus/deficit for UK HEIs, 2015-2024](https://github.com/kathryncodesthings/python-data-projects/blob/main/img/HESA_data_scatterplot.png "Scatterplot of Net cash vs. Surplus/deficit for UK HEIs, 2015-2024")
 
 To quantify the strength of the relationship, I calculated R², which measures how much of the variation in one variable can be explained by another.
@@ -55,11 +57,13 @@ In practice, this is because cash levels are driven by many other factors, such 
 * Financing and borrowing
 
 ### Impact
-To communicate the results, I used a clear scatterplot alongside a brief explanation of the statistics. This made the lack of a consistent relationship immediately visible to non-technical stakeholders.
+To communicate the results, I used a scatterplot (above) alongside a brief explanation of the statistics. This made the lack of a consistent relationship immediately visible to non-technical stakeholders.
 
-Following the presentation:
-* The Financial Planning team revised their cash forecasting approach
-* Surplus was no longer used as a proxy for cash performance
+(In the chart above, UCL is highlighted in red so that the Planning Team could quickly see how UCL performed. In the original Power BI version, each datapoint also showed a tooltip with its year and university to add more information, if needed, to the chart.)
+
+Following our discussion of the results:
+* The Financial Planning team reconsidered their underlying assumptions for cash forecasting
+* Surplus was discounted as a proxy for cash performance
 
 This project demonstrates my ability to challenge assumptions with data and translate statistical results into practical business decisions.
 
